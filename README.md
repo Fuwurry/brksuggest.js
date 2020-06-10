@@ -10,6 +10,8 @@ A Brick Hill script that allows users to suggest things while being in-game.
 6. Run "npm i discord.js"
 7. Add discord.js to sandbox
 8. Tada~!
+
+Do not forget to move `brksuggest.js` to the scripts folder.
 <hr>
 Discord Server: https://discord.gg/xjQZnre
 Brick Hill Profile: https://www.brick-hill.com/user/72663/
