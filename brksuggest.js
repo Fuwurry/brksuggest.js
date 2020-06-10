@@ -60,7 +60,7 @@ function suggest(channel, title, message, caller) {
         } else { // That webhook was only for if it couldn't find the original webhook
 
             caller.message(SexyChat('Your suggestion has been submitted!'))
-            caller.message(SexyChat('Please wait at least 10 seconds before tryin again.'))
+            caller.message(SexyChat('Please wait at least 10 seconds before trying again.'))
             foundHook.send('', {
 
                 'username': title,
@@ -74,7 +74,7 @@ function suggest(channel, title, message, caller) {
                 timestamp: new Date(),
                 footer: {
 
-                    text: 'brksuggest.js by Sesuiro',
+                    text: 'brksuggest.js V1.1 by Sesuiro',
 
                 }
 
@@ -102,7 +102,7 @@ Game.on('playerJoin', player => {
     player.on('initialSpawn', () => {
 
 
-        player.message(SexyChat('This server uses brksuggest.js by Sesuiro. Use the /suggest command to suggest something.'));
+        player.message(SexyChat('This server uses brksuggest.js V1.1 by Sesuiro. Use the /suggest command to suggest something.'));
 
 
     });
@@ -118,7 +118,7 @@ Game.command('suggest', debounce((caller, args) => {
 
     } else {
 
-        suggest(bot.channels.get(channelId), 'Suggestion by '+caller.username+' | brksuggest.js', args, caller);
+        suggest(bot.channels.get(channelId), 'Suggestion by '+caller.username+' | brksuggest.js V1.1', args, caller);
         /*message.react('👍');
         message.react('👎');*/
         // will readd reaction stuff in later version when codes better
