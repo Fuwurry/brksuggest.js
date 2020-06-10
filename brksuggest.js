@@ -1,6 +1,5 @@
 // brksuggest.js by Sesuiro/SesuiroNotSesurio
 // With Testing and Bug fixes by Tylorfoot
-// June 10th 2020
 
 const bot = new Discord.Client({disableEveryone: false});
 bot.login('REPLACE WITH BOT TOKEN');
