@@ -3,13 +3,14 @@
 
 const bot = new Discord.Client({disableEveryone: false});
 bot.login('REPLACE WITH BOT TOKEN');
+
+// setting
 var channelId = 'REPLACE WITH CHANNEL ID';
+var color = 'd9a744';
 
 function suggest(channel, title, message, caller) {
 
-    if (!channel) { console.log('Channel not specified.'); }
-    if (!title) { console.log('Title not specified.'); }
-    if (!message) { console.log('Message not specified.'); }
+    if (!channelId) { console.log('Channel not specified.'); }
     if (!color) { color = 'd9a744'; }
 
     channel.fetchWebhooks()
